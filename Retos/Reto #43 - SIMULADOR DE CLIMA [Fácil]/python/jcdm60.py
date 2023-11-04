@@ -33,6 +33,7 @@ class WeatherSimulator:
 
     def simulate_conditions(self):
         for day in range(1, self.prediction_days + 1):
+            self.prob_rain = 30  # Probabilidad inicial de lluvia (se puede ajustar)
             # Simular cambios en la temperatura
             temperature_change = random.choice([-2, 0, 2])
             
